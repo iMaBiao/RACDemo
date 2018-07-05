@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8A47864520EE04F10019DCC9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47864420EE04F10019DCC9 /* LoginViewController.m */; };
+		8A47864820EE05370019DCC9 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47864720EE05370019DCC9 /* LoginViewModel.m */; };
+		8A47864A20EE058F0019DCC9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A47864920EE058F0019DCC9 /* LoginViewController.xib */; };
+		8A47865120EE07840019DCC9 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47865020EE07840019DCC9 /* Account.m */; };
 		8A6E15AA20BCE6E2006A852E /* CalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E15A920BCE6E2006A852E /* CalculateManager.m */; };
 		8A7FEC3020BBF0F800565686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FEC2F20BBF0F800565686 /* AppDelegate.m */; };
 		8A7FEC3320BBF0F800565686 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FEC3220BBF0F800565686 /* ViewController.m */; };
@@ -23,6 +27,13 @@
 		125233CB27D57FB365E17295 /* Pods-RACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-RACDemo/Pods-RACDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2F235844D84FFE8B6888867A /* Pods-RACDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RACDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RACDemo/Pods-RACDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		4707ECB077C64A083E9A52E0 /* libPods-RACDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RACDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A47864320EE04F10019DCC9 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		8A47864420EE04F10019DCC9 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		8A47864620EE05370019DCC9 /* LoginViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		8A47864720EE05370019DCC9 /* LoginViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		8A47864920EE058F0019DCC9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8A47864F20EE07840019DCC9 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		8A47865020EE07840019DCC9 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 		8A6E15A820BCE6E2006A852E /* CalculateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateManager.h; sourceTree = "<group>"; };
 		8A6E15A920BCE6E2006A852E /* CalculateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateManager.m; sourceTree = "<group>"; };
 		8A6E15AB20BCEF1B006A852E /* libReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReactiveCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +87,52 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8A47863F20EE04A40019DCC9 /* MVVMDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8A47864020EE04B90019DCC9 /* Login */,
+			);
+			path = MVVMDemo;
+			sourceTree = "<group>";
+		};
+		8A47864020EE04B90019DCC9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				8A47864E20EE07750019DCC9 /* Model */,
+				8A47864220EE04D00019DCC9 /* ViewModel */,
+				8A47864120EE04C80019DCC9 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		8A47864120EE04C80019DCC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A47864320EE04F10019DCC9 /* LoginViewController.h */,
+				8A47864420EE04F10019DCC9 /* LoginViewController.m */,
+				8A47864920EE058F0019DCC9 /* LoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A47864220EE04D00019DCC9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A47864620EE05370019DCC9 /* LoginViewModel.h */,
+				8A47864720EE05370019DCC9 /* LoginViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8A47864E20EE07750019DCC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A47864F20EE07840019DCC9 /* Account.h */,
+				8A47865020EE07840019DCC9 /* Account.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		8A7FEC2220BBF0F800565686 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +154,7 @@
 		8A7FEC2D20BBF0F800565686 /* RACDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8A47863F20EE04A40019DCC9 /* MVVMDemo */,
 				8A7FEC4520BBF75700565686 /* Link */,
 				8A7FEC2E20BBF0F800565686 /* AppDelegate.h */,
 				8A7FEC2F20BBF0F800565686 /* AppDelegate.m */,
@@ -182,6 +240,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A47864A20EE058F0019DCC9 /* LoginViewController.xib in Resources */,
 				8A7FEC3B20BBF0F900565686 /* LaunchScreen.storyboard in Resources */,
 				8A7FEC3820BBF0F900565686 /* Assets.xcassets in Resources */,
 				8A7FEC3620BBF0F800565686 /* Main.storyboard in Resources */,
@@ -216,10 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A47865120EE07840019DCC9 /* Account.m in Sources */,
+				8A47864820EE05370019DCC9 /* LoginViewModel.m in Sources */,
 				8A6E15AA20BCE6E2006A852E /* CalculateManager.m in Sources */,
 				8A7FEC3320BBF0F800565686 /* ViewController.m in Sources */,
 				8ACFC6C420BD282900F157C6 /* RedView.m in Sources */,
 				8A7FEC4B20BBF7AA00565686 /* CalculateMaker.m in Sources */,
+				8A47864520EE04F10019DCC9 /* LoginViewController.m in Sources */,
 				8A7FEC3E20BBF0F900565686 /* main.m in Sources */,
 				8A7FEC3020BBF0F800565686 /* AppDelegate.m in Sources */,
 			);

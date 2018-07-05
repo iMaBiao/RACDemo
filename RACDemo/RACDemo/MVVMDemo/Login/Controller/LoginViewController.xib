@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="accountField" destination="NAX-AH-4u7" id="4df-Qz-yiW"/>
+                <outlet property="loginBtn" destination="EEH-LZ-BfX" id="SDe-Hw-Hd9"/>
+                <outlet property="pwdField" destination="8Ka-RA-1T0" id="Vgz-Nn-Iv1"/>
+                <outlet property="view" destination="iN0-l3-epB" id="43B-OK-E52"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAX-AH-4u7">
+                    <rect key="frame" x="20" y="170" width="335" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="69V-tV-QuP"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8Ka-RA-1T0">
+                    <rect key="frame" x="20" y="240" width="335" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Wk9-tR-ufM"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEH-LZ-BfX">
+                    <rect key="frame" x="100" y="330" width="175" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="hlc-YN-24g"/>
+                    </constraints>
+                    <state key="normal" title="Login">
+                        <color key="titleColor" red="0.16862745100000001" green="0.38823529410000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NAX-AH-4u7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="150" id="4W5-7I-ABb"/>
+                <constraint firstItem="8Ka-RA-1T0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="54b-Ct-fTy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="NAX-AH-4u7" secondAttribute="trailing" constant="20" id="DXZ-qm-frG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EEH-LZ-BfX" secondAttribute="trailing" constant="100" id="OMh-zu-Xjv"/>
+                <constraint firstItem="8Ka-RA-1T0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="220" id="RDa-PG-iAY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8Ka-RA-1T0" secondAttribute="trailing" constant="20" id="Vt8-np-fu3"/>
+                <constraint firstItem="EEH-LZ-BfX" firstAttribute="top" secondItem="8Ka-RA-1T0" secondAttribute="bottom" constant="40" id="bPY-AD-XoF"/>
+                <constraint firstItem="EEH-LZ-BfX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="nih-dY-ugH"/>
+                <constraint firstItem="NAX-AH-4u7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ueL-ng-Ws2"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-140.5" y="40.5"/>
+        </view>
+    </objects>
+</document>
