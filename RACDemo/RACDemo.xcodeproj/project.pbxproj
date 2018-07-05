@@ -11,6 +11,9 @@
 		8A47864820EE05370019DCC9 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47864720EE05370019DCC9 /* LoginViewModel.m */; };
 		8A47864A20EE058F0019DCC9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A47864920EE058F0019DCC9 /* LoginViewController.xib */; };
 		8A47865120EE07840019DCC9 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47865020EE07840019DCC9 /* Account.m */; };
+		8A47865820EE17570019DCC9 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47865720EE17570019DCC9 /* Book.m */; };
+		8A47865B20EE176D0019DCC9 /* RequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47865A20EE176D0019DCC9 /* RequestViewModel.m */; };
+		8A47865E20EE17850019DCC9 /* BookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A47865D20EE17850019DCC9 /* BookViewController.m */; };
 		8A6E15AA20BCE6E2006A852E /* CalculateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A6E15A920BCE6E2006A852E /* CalculateManager.m */; };
 		8A7FEC3020BBF0F800565686 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FEC2F20BBF0F800565686 /* AppDelegate.m */; };
 		8A7FEC3320BBF0F800565686 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FEC3220BBF0F800565686 /* ViewController.m */; };
@@ -34,6 +37,12 @@
 		8A47864920EE058F0019DCC9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8A47864F20EE07840019DCC9 /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
 		8A47865020EE07840019DCC9 /* Account.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
+		8A47865620EE17570019DCC9 /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		8A47865720EE17570019DCC9 /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		8A47865920EE176D0019DCC9 /* RequestViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestViewModel.h; sourceTree = "<group>"; };
+		8A47865A20EE176D0019DCC9 /* RequestViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestViewModel.m; sourceTree = "<group>"; };
+		8A47865C20EE17850019DCC9 /* BookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookViewController.h; sourceTree = "<group>"; };
+		8A47865D20EE17850019DCC9 /* BookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookViewController.m; sourceTree = "<group>"; };
 		8A6E15A820BCE6E2006A852E /* CalculateManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateManager.h; sourceTree = "<group>"; };
 		8A6E15A920BCE6E2006A852E /* CalculateManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateManager.m; sourceTree = "<group>"; };
 		8A6E15AB20BCEF1B006A852E /* libReactiveCocoa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReactiveCocoa.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +99,7 @@
 		8A47863F20EE04A40019DCC9 /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				8A47865220EE17050019DCC9 /* NetRequest */,
 				8A47864020EE04B90019DCC9 /* Login */,
 			);
 			path = MVVMDemo;
@@ -129,6 +139,43 @@
 			children = (
 				8A47864F20EE07840019DCC9 /* Account.h */,
 				8A47865020EE07840019DCC9 /* Account.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8A47865220EE17050019DCC9 /* NetRequest */ = {
+			isa = PBXGroup;
+			children = (
+				8A47865520EE173E0019DCC9 /* Model */,
+				8A47865420EE17260019DCC9 /* ViewModel */,
+				8A47865320EE171F0019DCC9 /* Controller */,
+			);
+			path = NetRequest;
+			sourceTree = "<group>";
+		};
+		8A47865320EE171F0019DCC9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8A47865C20EE17850019DCC9 /* BookViewController.h */,
+				8A47865D20EE17850019DCC9 /* BookViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8A47865420EE17260019DCC9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8A47865920EE176D0019DCC9 /* RequestViewModel.h */,
+				8A47865A20EE176D0019DCC9 /* RequestViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8A47865520EE173E0019DCC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8A47865620EE17570019DCC9 /* Book.h */,
+				8A47865720EE17570019DCC9 /* Book.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -275,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A47865820EE17570019DCC9 /* Book.m in Sources */,
 				8A47865120EE07840019DCC9 /* Account.m in Sources */,
 				8A47864820EE05370019DCC9 /* LoginViewModel.m in Sources */,
 				8A6E15AA20BCE6E2006A852E /* CalculateManager.m in Sources */,
@@ -282,6 +330,8 @@
 				8ACFC6C420BD282900F157C6 /* RedView.m in Sources */,
 				8A7FEC4B20BBF7AA00565686 /* CalculateMaker.m in Sources */,
 				8A47864520EE04F10019DCC9 /* LoginViewController.m in Sources */,
+				8A47865B20EE176D0019DCC9 /* RequestViewModel.m in Sources */,
+				8A47865E20EE17850019DCC9 /* BookViewController.m in Sources */,
 				8A7FEC3E20BBF0F900565686 /* main.m in Sources */,
 				8A7FEC3020BBF0F800565686 /* AppDelegate.m in Sources */,
 			);

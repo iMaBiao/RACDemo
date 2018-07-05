@@ -30,12 +30,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+/** 这里做一些基本使用演示 */
+    
+    
 //    [self testLink];
     
 //    [self testFunction];
-    
-    //RAC Demo
-//    [self testRACSignal];
     
     /// RAC代替Delegate
 //    [self racReplaceDelegate];
@@ -52,7 +52,12 @@
     /// 监听文本框文字改变
 //    [self racObserveTextField];
 //    [self racObserveTextView];
+
+    /// 处理多个请求，都返回结果的时候，统一做处理.
+//    [self testRACSignal];
+
 }
+
 
 #pragma mark - 监听文本框文字改变
 - (void)racObserveTextField
@@ -150,7 +155,7 @@
     }];
 }
 
-// 处理多个请求，都返回结果的时候，统一做处理.
+#pragma mark -  处理多个请求，都返回结果的时候，统一做处理.
 - (void)testRACSignal
 {
      // 创建信号A
@@ -178,15 +183,9 @@
     // 注意:selector方法的参数不能乱写,有几个信号就对应几个参数
     // 不需要主动订阅signalA,signalB,方法内部会自动订阅
     
-//    [self rac_liftSelector:@selector(updateUIWithHot:) withSignalsFromArray:@[signalA]];
-    
     [self rac_liftSelector:@selector(updateUIWithHot: new:) withSignalsFromArray:@[signalA,signalB]];
     
 }
-//- (void)updateUIWithHot:(NSString *)hot
-//{
-//    NSLog(@"%s hot = %@", __FUNCTION__, hot);
-//}
 - (void)updateUIWithHot:(NSString *)hot new:(NSString *)new
 {
     NSLog(@"%s hot = %@ , new = %@", __FUNCTION__, hot ,new);
