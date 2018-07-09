@@ -37,6 +37,12 @@
     }];
 }
 
-
+- (RequestViewModel *)requestViewModel
+{
+    if (_requestViewModel == nil) {
+        _requestViewModel = [[RequestViewModel alloc]init];
+    }
+    return _requestViewModel;
+}
 
 @end
