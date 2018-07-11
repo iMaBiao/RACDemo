@@ -22,6 +22,7 @@
 		8A7FEC3B20BBF0F900565686 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A7FEC3920BBF0F900565686 /* LaunchScreen.storyboard */; };
 		8A7FEC3E20BBF0F900565686 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FEC3D20BBF0F900565686 /* main.m */; };
 		8A7FEC4B20BBF7AA00565686 /* CalculateMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A7FEC4A20BBF7AA00565686 /* CalculateMaker.m */; };
+		8A8372EE20F5ECF5008DE8DC /* ReactiveCocoa常见类使用 in Resources */ = {isa = PBXBuildFile; fileRef = 8A8372ED20F5ECF5008DE8DC /* ReactiveCocoa常见类使用 */; };
 		8ACFC6C420BD282900F157C6 /* RedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ACFC6C320BD282900F157C6 /* RedView.m */; };
 		DF500307060F5512DBEA8267 /* libPods-RACDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4707ECB077C64A083E9A52E0 /* libPods-RACDemo.a */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		8A7FEC3D20BBF0F900565686 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		8A7FEC4920BBF7AA00565686 /* CalculateMaker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalculateMaker.h; sourceTree = "<group>"; };
 		8A7FEC4A20BBF7AA00565686 /* CalculateMaker.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculateMaker.m; sourceTree = "<group>"; };
+		8A8372ED20F5ECF5008DE8DC /* ReactiveCocoa常见类使用 */ = {isa = PBXFileReference; lastKnownFileType = text; path = "ReactiveCocoa常见类使用"; sourceTree = "<group>"; };
 		8ACFC6C220BD282900F157C6 /* RedView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RedView.h; sourceTree = "<group>"; };
 		8ACFC6C320BD282900F157C6 /* RedView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RedView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -209,6 +211,7 @@
 				8A7FEC3220BBF0F800565686 /* ViewController.m */,
 				8ACFC6C220BD282900F157C6 /* RedView.h */,
 				8ACFC6C320BD282900F157C6 /* RedView.m */,
+				8A8372ED20F5ECF5008DE8DC /* ReactiveCocoa常见类使用 */,
 				8A7FEC3420BBF0F800565686 /* Main.storyboard */,
 				8A7FEC3720BBF0F900565686 /* Assets.xcassets */,
 				8A7FEC3920BBF0F900565686 /* LaunchScreen.storyboard */,
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A47864A20EE058F0019DCC9 /* LoginViewController.xib in Resources */,
+				8A8372EE20F5ECF5008DE8DC /* ReactiveCocoa常见类使用 in Resources */,
 				8A7FEC3B20BBF0F900565686 /* LaunchScreen.storyboard in Resources */,
 				8A7FEC3820BBF0F900565686 /* Assets.xcassets in Resources */,
 				8A7FEC3620BBF0F800565686 /* Main.storyboard in Resources */,
